@@ -3,54 +3,74 @@
 <head>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="styles.css">
+	<link href="https://fonts.googleapis.com/css2?family=Jost" rel="stylesheet">
 </head>
 <body>
-
 	<div class="header">
-		<img class="logo" src="images/logo.png">
-		<div class="links">
+		<a href="index.html">
+			<img class="logo" src="images/logo.png">
+		</a>
+		<div class="links circle">
 			<a href="podcast.htm">Subscribe to the Podcast</a>
 		</div>
-		<p>Lessons from life</p>
+		<p class="subtitle">Lessons from a life in progress.</p>
 	</div>
+	<div class="mini-navbar">
+		<a href="index.html">
+			<img class="logo horizontal" src="images/logo-horizontal.png">
+		</a>
+		<img class="menu-icon" src="images/hamburger-icon.png" />
+		<div class="mini-navbar-right">
+			<a class="active" href="index.html">Blog</a>
+			<a href="podcast.html">Podcast</a>
+			<a href="about.html">About</a>
+		</div>
+	</div>
+	<div class="border"></div>
 	<div class="row">
 		<div class="leftcolumn">
 			<div class="card">
-				<h2>TITLE HEADING</h2>
-				<h5>Title description, Dec 7, 2017</h5>
+				<h1>Starting with Why</h1>
+				<h5>July 7, 2020
+					<span class="tags"><a href="">#happy</a> #energy #experiment</span>
+				</h5>
 				<div class="blog-image">
 					<img src="images/calendar.jpg" />
 				</div>
-				<p>Some text..</p>
+				<p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.</p>
+				<p><a href="post.html">Continue reading...</a></p>
 			</div>
 			<div class="card">
-				<h2>TITLE HEADING</h2>
-				<h5>Title description, Sep 2, 2017</h5>
-				<div class="fakeimg" style="height:200px;">Image</div>
-				<p>Some text..</p>
+				<h1>Finding your Why</h1>
+				<h5>Title description, Jan 17, 2017</h5>
+				<div class="blog-image">
+					<img src="images/happy.jpg" />
+				</div>
+				<p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.</p>
+				<p><a href="post.html">Continue reading...</a></p>
 			</div>
 		</div>
 		<div class="rightcolumn">
 			<div class="card">
 				<h2>About Me</h2>
-				<div class="fakeimg" style="height:100px;">Image</div>
-				<p>Some text about me </p>
+				<div class="profile-image">
+					<img src="images/profile.png" />
+				</div>
+				<p>I'm Kip. I've learned a lot and I've forgotten most of it. This is a collection of those ideas, for my own sake. You're welcome to come along for the ride.</p>
 			</div>
 			<div class="card">
-				<h3>Popular Post</h3>
+				<h3>Favorite Posts</h3>
 				<div class="fakeimg">Image</div><br>
 				<div class="fakeimg">Image</div><br>
 				<div class="fakeimg">Image</div>
 			</div>
 			<div class="card">
-				<h3>Follow Me</h3>
-				<p>Some text..</p>
+				<h3>Topics</h3>
+				<p>#happy
+				<br />#energy
+				<br />#experiment</p>
 			</div>
 		</div>
-	</div>
-
-	<div class="footer">
-		<h2>Footer</h2>
 	</div>
 </body>
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-158630435-1"></script>
@@ -61,4 +81,5 @@
 
 	gtag('config', 'UA-158630435-1');
 </script>
+<script type="text/javascript" src="script.js"></script>
 </html>

@@ -4,15 +4,69 @@
 
 body {
 	font-family: Arial;
-	padding: 20px;
-	background: #f1f1f1;
+	margin: 0 0 100px;
 }
 
 .header {
-	padding: 30px;
+	padding: 50px;
 	font-size: 40px;
 	text-align: left;
-	background: white;
+	background: #a2e3b0;
+	height: 450px;
+}
+
+.logo.horizontal {
+	padding: 10px;
+	height: 60px;
+    width: auto;
+}
+
+.mini-navbar {
+	overflow: hidden;
+	background: #a2e3b0;
+	transition: 0.2s;
+	position: fixed;
+	width: 100%;
+	top: -60px;
+	z-index: 99;
+	height: 60px;
+}
+
+.mini-navbar-right {
+	float: right;
+	margin-right: 100px;
+	font-color: #000;
+	font-family: 'Jost', sans-serif;
+}
+
+.mini-navbar-right a {
+	float: left;
+	color: #000;
+	padding: 12px;
+ 	font-size: 18px;
+	line-height: 36px;
+	text-decoration: none;
+}
+
+.mini-navbar a.active {
+	text-decoration: overline;
+}
+
+.mini-navbar a:visited {
+	color: #000;
+}
+
+.menu-icon {
+	display: none;
+}
+
+.mini-navbar.expand {
+	height: auto;
+}
+
+.border {
+	background: url('images/border.png');
+	height: 40px;
 }
 
 .leftcolumn {   
@@ -32,10 +86,22 @@ body {
 	padding: 20px;
 }
 
+.profile-image {
+	width: 100%;
+}
+
+.profile-image img {
+	width: 100%;
+}
+
 .card {
 	background-color: white;
 	padding: 20px;
 	margin-top: 20px;
+}
+
+.row {
+	margin: 0 150px 0;
 }
 
 .row:after {
@@ -51,33 +117,77 @@ body {
 	margin-top: 20px;
 }
 
-/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 800px) {
-	.leftcolumn, .rightcolumn {   
-		width: 100%;
-		padding: 0;
-	}
-}
-
 .logo {
-	width: 300px;
+	width: 500px;
+    margin-left: 100px;
 }
 
-.links {
-	float: right;
+.post .logo {
+	width: 100px;
+	vertical-align: middle;
 }
 
-.links a, a:visited {
-	color: black;
-	font-size: 22px;
+a, a:visited {
+	color: #a2e3b0;
 	text-decoration: none;
 }
 
-.links a:hover {
-	color: red;
+a:hover {
+	color: #5F5F5F;
 }
 
+.circle {
+	font-family: 'Jost', sans-serif;
+	float: right;
+	align-items: center;
+	color: white;
+    background-color: rgba(0,0,0,.8);
+    background-image: url('images/texture.png'); 
+    border-radius: 50%;
+    display: flex;
+    font-size: .875rem;
+    height: 155px;
+    padding: 0 .5rem;
+    text-align: center;
+    width: 155px;
+}
 
+.circle a {
+	font-size: 22px;
+}
+
+.subtitle {
+	font-family: 'Jost', sans-serif;
+	right: 50px;
+    position: absolute;
+    top: 370px;
+    margin: 0;
+}
+
+.post .subtitle {
+	font-family: 'Jost', sans-serif;
+	font-size: 50px;
+	padding-left: 50px;
+}
+
+.post-title {
+	font-family: 'Jost', sans-serif;
+	position: absolute;
+    bottom: 0;
+    margin: 0;
+}
+
+h1 {
+	margin-bottom: 0;
+}
+
+h5 {
+	margin-top: 0;
+}
+
+.tags {
+	padding-left: 20px;
+}
 
 .blog-image {
 	height: 200px;
@@ -86,3 +196,58 @@ body {
 
 .blog-image img {
 	width: 100%;
+}
+
+
+
+
+
+
+@media screen and (max-width: 900px) {
+	.leftcolumn, .rightcolumn {   
+		width: 100%;
+		padding: 0;
+	}
+
+	.row {
+		margin: 0;
+	}
+
+	.logo {
+		max-height: 450px;
+		max-width: 88%;
+		margin: auto;
+		display: block;
+	}
+
+	.links, .subtitle {
+		visibility: hidden;
+	}
+
+	.mini-navbar {
+		padding: 5px 10px !important; /* !important to make sure JavaScript doesn't override the padding on small screens */
+	}
+
+	.logo.horizontal {
+		height: 50px;
+		float: left;
+	}
+
+	.menu-icon {
+		display: block;
+		height: 50px;
+	    padding: 15px 10px;
+	    float: right;
+	}
+
+	.mini-navbar a {
+		float: none;
+		display: block;
+		text-align: left;
+	}
+	
+	.mini-navbar-right {
+		float: none;
+		margin-top: 70px;
+	}
+}
